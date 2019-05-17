@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: productdomain
+  labels:
+    app: productdomain
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: productdomain
+  template:
+    metadata:
+      labels:
+        app: productdomain
+    spec:
+      containers:
+      - name: productdomain
+        image: ganeshbabugopal/productdomain
+        ports:
+        - containerPort: 1114

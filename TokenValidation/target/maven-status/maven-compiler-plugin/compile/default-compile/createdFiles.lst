@@ -1,0 +1,7 @@
+com/amazonaws/lambda/demo/AuthPolicy.class
+com/amazonaws/lambda/demo/LambdaFunctionHandler.class
+com/amazonaws/lambda/demo/AuthPolicy$PolicyDocument.class
+com/amazonaws/lambda/demo/TokenAuthorizer.class
+com/amazonaws/lambda/demo/AuthPolicy$Statement.class
+com/amazonaws/lambda/demo/TokenValidator.class
+com/amazonaws/lambda/demo/AuthPolicy$HttpMethod.class

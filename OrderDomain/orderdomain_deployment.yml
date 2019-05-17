@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderdomain
+  labels:
+    app: orderdomain
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orderdomain
+  template:
+    metadata:
+      labels:
+        app: orderdomain
+    spec:
+      containers:
+      - name: orderdomain
+        image: ganeshbabugopal/orderdomain
+        ports:
+        - containerPort: 1112

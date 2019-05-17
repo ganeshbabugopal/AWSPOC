@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: productcrud-ingress
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+  labels:
+    app: ordercrud
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /products
+            backend:
+              serviceName: productcrud
+              servicePort: 80     

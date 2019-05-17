@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    OrderDomainLabel1:
+      path: /order
+      url: http://localhost:8081
+    OrderDomainLabel2:
+      path: /productorder
+      url: http://localhost:8081
+server:
+  port: 8082

@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    OrderDomainLabel1:
+      path: /order
+      url: http://ordercrud
+    OrderDomainLabel2:
+      path: /productorder
+      url: http://ordercrud
+server:
+  port: 80

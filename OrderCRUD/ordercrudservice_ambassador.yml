@@ -1,0 +1,18 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ordercrud
+  annotations:
+    getambassador.io/config: |
+      apiVersion: ambassador/v1
+      kind: Mapping
+      name: ordercrud_mapping
+      prefix: /qotm/
+      service: ordercrud
+spec:
+  selector:
+    app: ordercrud
+  ports:
+  - protocol: TCP
+    name: http
+    port: 80

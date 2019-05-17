@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: productcrud
+  labels:
+    app: productcrud
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: productcrud
+  template:
+    metadata:
+      labels:
+        app: productcrud
+    spec:
+      containers:
+      - name: productcrud
+        image: ganeshbabugopal/productcrud

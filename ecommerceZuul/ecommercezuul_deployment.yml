@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecommercezuul
+  labels:
+    app: ecommercezuul
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecommercezuul
+  template:
+    metadata:
+      labels:
+        app: ecommercezuul
+    spec:
+      containers:
+      - name: ecommercezuul
+        image: ganeshbabugopal/ecommercezuul
+        env:
+        - name: server.port
+          value: "80"

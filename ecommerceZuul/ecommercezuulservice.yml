@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ecommercezuul
+spec:
+  type: LoadBalancer
+  selector:
+    app: ecommercezuul
+  ports:
+  - protocol: TCP
+    name: http
+    port: 80

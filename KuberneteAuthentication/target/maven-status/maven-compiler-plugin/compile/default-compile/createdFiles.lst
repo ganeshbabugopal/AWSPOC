@@ -1,0 +1,4 @@
+com/amazonaws/lambda/demo/ResponseModel.class
+com/amazonaws/lambda/demo/LambdaFunctionHandler.class
+com/amazonaws/lambda/demo/TokenGenerator.class
+com/amazonaws/lambda/demo/RequestModel.class
